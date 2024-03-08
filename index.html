@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/desktop.css">
+  <link rel="stylesheet" href="./css//mobile.css">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-color: #1B1A1A;  
+  }
+</style>
+<body id="body">
+  <div class="mouse_wrapp" id="mouse_wrapp">
+    <img src="./img/mouse.svg" alt="Мышка" class="mouse" id="mouse">
+    <img src="./img/rudiron.svg" alt="Рудирон" class="rudiron">
+  </div>
+  <div class="wrapp" id="wrapp">
+    <img src="./img/sun.svg" alt="Задний фон" class="sun">
+    <div class="map" id="map">
+      <div class="item-1-1" onmouseover="item_over(['item-1-1__info-1', 'item-1-1__info-2', 'item-1-1__border-1', 'item-1-1__border-2'])" onmouseout="item_out(['item-1-1__info-1', 'item-1-1__info-2', 'item-1-1__border-1', 'item-1-1__border-2'])">
+        <img src="./img/desktop/item-1-1.svg" id="item-1-1__info-1" alt="GPIO-1" class="item-1-1__info-1">
+        <div class="item-1-1__border-1" id="item-1-1__border-1"></div>
+        <img src="./img/desktop/item-1-2.svg" id="item-1-1__info-2" alt="Разъем для TFT модуля" class="item-1-1__info-2">
+        <div class="item-1-1__border-2" id="item-1-1__border-2"></div>
+      </div>
+      <div class="item_1_2" onmouseover="item_over(['item-1-2__border-1', 'item-1-2__info-1', 'item-1-2__border-2', 'item-1-2__border-3', 'item-1-2__info-2'])" onmouseout="item_out(['item-1-2__border-1', 'item-1-2__info-1', 'item-1-2__border-2', 'item-1-2__border-3', 'item-1-2__info-2'])">
+        <img src="./img/desktop/item-1-3.svg" id="item-1-2__info-1" alt="Пользовательские индикаторы и кнопки" class="item-1-2__info-1">
+        <div class="item-1-2__border-1" id="item-1-2__border-1"></div>
+        <img src="./img/desktop/item-1-4.svg" id="item-1-2__info-2" alt="Модуль расширения CAN/UART" class="item-1-2__info-2">
+        <div class="item-1-2__border-2" id="item-1-2__border-2"></div>
+        <div class="item-1-2__border-3" id="item-1-2__border-3"></div>
+      </div>
+      <div class="item_1_3" onmouseover="item_over(['item-1-3__border-1', 'item-1-3__info-1'])" onmouseout="item_out(['item-1-3__border-1', 'item-1-3__info-1'])">
+        <img src="./img/desktop/item-1-5.svg" id="item-1-3__info-1" alt="GPIO-2"  class="item-1-3__info-1">
+        <div class="item-1-3__border-1" id="item-1-3__border-1"></div>
+      </div>
+      <div class="item_2_1" onmouseover="item_over(['item-2-1__info-1', 'item-2-1__border-1', 'item-2-1__info-2', 'item-2-1__border-2', 'item-2-1__info-3', 'item-2-1__border-3'])"  onmouseout="item_out(['item-2-1__info-1', 'item-2-1__border-1', 'item-2-1__info-2', 'item-2-1__border-2', 'item-2-1__info-3', 'item-2-1__border-3'])">
+        <img src="./img/desktop/item-2-1.svg" id="item-2-1__info-1" alt="Внешнее питание" class="item-2-1__info-1">
+        <div class="item-2-1__border-1" id="item-2-1__border-1"></div>
+        <img src="./img/desktop/item-2-2.svg" id="item-2-1__info-2" alt="Индикатор питания" class="item-2-1__info-2">
+        <div class="item-2-1__border-2" id="item-2-1__border-2"></div>
+        <img src="./img/desktop/item-2-3.svg" id="item-2-1__info-3" alt="Выбор источника питания" class="item-2-1__info-3">
+        <div class="item-2-1__border-3" id="item-2-1__border-3"></div>
+      </div>
+      <div class="item_2_2" onmouseover="item_over(['item-2-2__info-1', 'item-2-2__border-1', 'item-2-2__border-2', 'item-2-2__info-2', 'item-2-2__border-2', 'item-2-2__info-3', 'item-2-2__border-3',  'item-1-2__border-2',  'item-1-2__info-2', 'item-1-2__border-3'])"  onmouseout="item_out(['item-2-2__info-1', 'item-2-2__border-1', 'item-2-2__border-2','item-2-2__border-2', 'item-2-2__info-2', 'item-2-2__border-2', 'item-2-2__info-3', 'item-2-2__border-3', 'item-1-2__border-2',  'item-1-2__info-2', 'item-1-2__border-3'])">
+        <img src="./img/desktop/item-2-4.svg" id="item-2-2__info-1" alt="Микроконтроллер K1986BE92QI" class="item-2-2__info-1">
+        <div class="item-2-2__border-1" id="item-2-2__border-1"></div>
+        <img src="./img/desktop/item-2-5.svg" id="item-2-2__info-2" alt="Программирование по USB" class="item-2-2__info-2">
+        <div class="item-2-2__border-2" id="item-2-2__border-2"></div>
+        <img src="./img/desktop/item-2-6.svg" id="item-2-2__info-3" alt="Индикатор UART" class="item-2-2__info-3">
+        <div class="item-2-2__border-3" id="item-2-2__border-3"></div>
+      </div>
+      <div class="item_2_3" onmouseover="item_over(['item-2-3__info-1', 'item-2-3__border-1', 'item-2-3__info-2', 'item-2-3__border-2', 'item-2-3__info-3', 'item-2-3__border-3', 'item-2-3__border-4'])" onmouseout="item_out(['item-2-3__info-1', 'item-2-3__border-1', 'item-2-3__info-2', 'item-2-3__border-2', 'item-2-3__info-3', 'item-2-3__border-3', 'item-2-3__border-4'])">
+        <img src="./img/desktop/item-2-7.svg" id="item-2-3__info-1" alt="Модуль расширения CAN/UART" class="item-2-3__info-1">
+        <div class="item-2-3__border-1" id="item-2-3__border-1"></div>
+        <img src="./img/desktop/item-2-8.svg" id="item-2-3__info-2" alt="Кнопка пробуждения" class="item-2-3__info-2">
+        <div class="item-2-3__border-2" id="item-2-3__border-2"></div>
+        <img src="./img/desktop/item-2-9.svg" id="item-2-3__info-3" alt="Интерфейс J-Link программатора" class="item-2-3__info-3">
+        <div class="item-2-3__border-3" id="item-2-3__border-3"></div>
+        <div class="item-2-3__border-4" id="item-2-3__border-4"></div>
+      </div>
+      <div class="item_3_1" onmouseover="item_over(['item-3-1__info-1', 'item-3-1__border-1', 'item-3-1__border-2', 'item-3-1__info-2', 'item-3-1__border-3'])" onmouseout="item_out(['item-3-1__info-1', 'item-3-1__border-1','item-3-1__border-2', 'item-3-1__info-2', 'item-3-1__border-3'])">
+        <img src="./img/desktop/item-3-1.svg" id="item-3-1__info-1" alt="Питание радиомодуля" class="item-3-1__info-1">
+        <!-- <img src="./img//item-3-4.svg" id="item-3-1__info-1" alt="Питание радиомодуля" class="item-3-1__info-1"> -->
+        <div class="item-3-1__border-1" id="item-3-1__border-1"></div>
+        <div class="item-3-1__border-2" id="item-3-1__border-2"></div>
+        <div class="item-3-1__border-3" id="item-3-1__border-3"></div>
+      </div>
+      <div class="item_3_2" onmouseover="item_over(['item-3-2__info-1', 'item-3-2__border-1', 'item-3-2__border-2', 'item-3-2__border-3', 'item-3-2__border-4', 'item-3-1__info-1', 'item-3-1__border-1', 'item-3-1__border-3', 'item-2-2__info-1', 'item-2-2__border-1'])" onmouseout="item_out(['item-3-2__info-1', 'item-3-2__border-1', 'item-3-2__border-2', 'item-3-2__border-3', 'item-3-2__border-4', 'item-3-1__info-1', 'item-3-1__border-1', 'item-3-1__border-3', 'item-2-2__info-1', 'item-2-2__border-1'])">
+        <img src="./img/desktop/item-3-2.svg" id="item-3-2__info-1" alt="" class="item-3-2__info-1">
+        <div class="item-3-2__border-1" id="item-3-2__border-1"></div>
+        <div class="item-3-2__border-2" id="item-3-2__border-2"></div>
+        <div class="item-3-2__border-3" id="item-3-2__border-3"></div>
+        <div class="item-3-2__border-4" id="item-3-2__border-4"></div>
+      </div>
+      <div class="item_3_3" onmouseover="item_over(['item-3-3__border-1', 'item-3-3__info-1', 'item-2-3__info-2', 'item-2-3__border-2'])" onmouseout="item_out(['item-3-3__border-1', 'item-3-3__info-1', 'item-2-3__info-2', 'item-2-3__border-2'])">
+        <img src="./img/desktop/item-3-3.svg" id="item-3-3__info-1" alt="nRF24L01" class="item-3-3__info-1">
+        <div class="item-3-3__border-1" id="item-3-3__border-1"></div>
+      </div>
+    </div>
+
+
+    
+    <div class="map_mobile map" id="map_mobile">
+      <div class="item-1-1" onmouseover="item_over(['item-1-1__info-1_mobile', 'item-1-1__info-2_mobile', 'item-1-1__border-1_mobile', 'item-1-1__border-2_mobile'])" onmouseout="item_out(['item-1-1__info-1_mobile', 'item-1-1__info-2_mobile', 'item-1-1__border-1_mobile', 'item-1-1__border-2_mobile'])">
+        <img src="./img/mobile/item-1-1.svg" id="item-1-1__info-1_mobile" alt="GPIO-1" class="item-1-1__info-1_mobile mobile">
+        <div class="item-1-1__border-1_mobile" id="item-1-1__border-1_mobile"></div>
+        <img src="./img/mobile/item-1-2.svg" id="item-1-1__info-2_mobile" alt="Разъем для TFT модуля" class="item-1-1__info-2_mobile mobile">
+        <div class="item-1-1__border-2_mobile" id="item-1-1__border-2_mobile"></div>
+      </div>
+      <div class="item_1_2" onmouseover="item_over(['item-1-2__info-1_mobile', 'item-1-2__info-2_mobile', 'item-1-2__border-1_mobile', 'item-1-2__border-2_mobile', 'item-1-2__border-3_mobile'])" onmouseout="item_out(['item-1-2__info-1_mobile', 'item-1-2__info-2_mobile', 'item-1-2__border-1_mobile', 'item-1-2__border-2_mobile', 'item-1-2__border-3_mobile'])"  >
+        <img src="./img/mobile/item-1-3.svg" id="item-1-2__info-1_mobile" alt="Пользовательские индикаторы и кнопки" class="item-1-2__info-1_mobile mobile">
+        <div class="item-1-2__border-1_mobile" id="item-1-2__border-1_mobile"></div>
+        <img src="./img/mobile/item-1-4.svg" id="item-1-2__info-2_mobile" alt="Модуль расширения CAN/UART" class="item-1-2__info-2_mobile mobile">
+        <div class="item-1-2__border-2_mobile" id="item-1-2__border-2_mobile"></div>
+        <div class="item-1-2__border-3_mobile" id="item-1-2__border-3_mobile"></div>
+      </div>
+      <div class="item_1_3" onmouseover="item_over(['item-1-3__border-1_mobile', 'item-1-3__info-1_mobile'])" onmouseout="item_out(['item-1-3__border-1_mobile', 'item-1-3__info-1_mobile'])">
+        <img src="./img/mobile/item-1-5.svg" id="item-1-3__info-1_mobile" alt="GPIO-2"  class="item-1-3__info-1_mobile mobile">
+        <div class="item-1-3__border-1_mobile" id="item-1-3__border-1_mobile"></div>
+      </div>
+      <div class="item_2_1" onmouseover="item_over(['item-2-1__info-1_mobile', 'item-2-1__border-1_mobile', 'item-2-1__info-2_mobile', 'item-2-1__border-2_mobile', 'item-2-1__info-3_mobile', 'item-2-1__border-3_mobile'])"  onmouseout="item_out(['item-2-1__info-1_mobile', 'item-2-1__border-1_mobile', 'item-2-1__info-2_mobile', 'item-2-1__border-2_mobile', 'item-2-1__info-3_mobile', 'item-2-1__border-3_mobile'])">
+        <img src="./img/mobile/item-2-1.svg" id="item-2-1__info-1_mobile" alt="Внешнее питание" class="item-2-1__info-1_mobile mobile">
+        <div class="item-2-1__border-1_mobile" id="item-2-1__border-1_mobile"></div>
+        <img src="./img/mobile/item-2-2.svg" id="item-2-1__info-2_mobile" alt="Индикатор питания" class="item-2-1__info-2_mobile mobile">
+        <div class="item-2-1__border-2_mobile" id="item-2-1__border-2_mobile"></div>
+        <img src="./img/mobile/item-2-3.svg" id="item-2-1__info-3_mobile" alt="Выбор источника питания" class="item-2-1__info-3_mobile mobile">
+        <div class="item-2-1__border-3_mobile" id="item-2-1__border-3_mobile"></div>
+      </div>
+      <div class="item_2_2" onmouseover="item_over(['item-2-2__info-1_mobile', 'item-2-2__border-1_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-2_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-3_mobile', 'item-2-2__border-3_mobile',  'item-1-2__border-2_mobile',  'item-1-2__info-2_mobile', 'item-1-2__border-3_mobile'])"   onmouseout="item_out(['item-2-2__info-1_mobile', 'item-2-2__border-1_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-2_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-3_mobile', 'item-2-2__border-3_mobile',  'item-1-2__border-2_mobile',  'item-1-2__info-2_mobile', 'item-1-2__border-3_mobile'])">
+        <img src="./img/mobile/item-2-4.svg" id="item-2-2__info-1_mobile" alt="Микроконтроллер K1986BE92QI" class="item-2-2__info-1_mobile">
+        <div class="item-2-2__border-1_mobile" id="item-2-2__border-1_mobile"></div>
+        <img src="./img/mobile/item-2-5.svg" id="item-2-2__info-2_mobile" alt="Программирование по USB" class="item-2-2__info-2_mobile">
+        <div class="item-2-2__border-2_mobile" id="item-2-2__border-2_mobile"></div>
+        <img src="./img/mobile/item-2-6.svg" id="item-2-2__info-3_mobile" alt="Индикатор UART" class="item-2-2__info-3_mobile">
+        <div class="item-2-2__border-3_mobile" id="item-2-2__border-3_mobile"></div>
+      </div>
+      <div class="item_2_3" onmouseover="item_over(['item-2-3__info-1_mobile', 'item-2-3__border-1_mobile', 'item-2-3__border-2_mobile'])" onmouseout="item_out(['item-2-3__info-1_mobile', 'item-2-3__border-1_mobile', 'item-2-3__border-2_mobile'])">
+        <img src="./img/mobile/item-2-7.svg" id="item-2-3__info-1_mobile" alt="Интерфейс J-Link программатора" class="item-2-3__info-1_mobile mobile">
+        <div class="item-2-3__border-1_mobile" id="item-2-3__border-1_mobile"></div>
+        <div class="item-2-3__border-2_mobile" id="item-2-3__border-2_mobile"></div>
+      </div>
+      <div class="item_3_1" onmouseover="item_over(['item-3-1__info-1_mobile', 'item-3-1__border-1_mobile', 'item-3-1__border-2_mobile', 'item-3-1__border-3_mobile', 'item-3-1__info-2_mobile'])" onmouseout="item_out(['item-3-1__info-1_mobile', 'item-3-1__border-1_mobile','item-3-1__border-2_mobile', 'item-3-1__border-3_mobile', 'item-3-1__info-2_mobile'])">
+        <img src="./img/mobile/item-3-1.svg" id="item-3-1__info-1_mobile" alt="GPIO-4" class="item-3-1__info-1_mobile mobile">
+        <img src="./img/mobile/item-3-2.svg" id="item-3-1__info-2_mobile" alt="Питание радиомодуля" class="item-3-1__info-2_mobile mobile">
+        <div class="item-3-1__border-1_mobile" id="item-3-1__border-1_mobile"></div>
+        <div class="item-3-1__border-2_mobile" id="item-3-1__border-2_mobile"></div>
+        <div class="item-3-1__border-3_mobile" id="item-3-1__border-3_mobile"></div>
+      </div>
+      <div class="item_3_2" onmouseover="item_over(['item-3-2__info-1_mobile', 'item-3-2__info-2_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-2_mobile', 'item-3-2__border-3_mobile', 'item-3-2__border-4_mobile', 'item-3-1__info-2_mobile', 'item-3-1__border-1_mobile', 'item-3-1__border-2_mobile'])" onmouseout ="item_out(['item-3-2__info-1_mobile', 'item-3-2__info-2_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-2_mobile', 'item-3-2__border-3_mobile', 'item-3-2__border-4_mobile', 'item-3-1__info-2_mobile', 'item-3-1__border-1_mobile', 'item-3-1__border-2_mobile'])">
+        <img src="./img/mobile/item-3-3.svg" id="item-3-2__info-1_mobile" alt="nRF24L01" class="item-3-2__info-1_mobile mobile">
+        <img src="./img/mobile/item-3-4.svg" id="item-3-2__info-2_mobile" alt="ESP-01" class="item-3-2__info-2_mobile mobile">
+        <div class="item-3-2__border-1_mobile" id="item-3-2__border-1_mobile"></div>
+        <div class="item-3-2__border-2_mobile" id="item-3-2__border-2_mobile"></div>
+        <div class="item-3-2__border-3_mobile" id="item-3-2__border-3_mobile"></div>
+        <div class="item-3-2__border-4_mobile" id="item-3-2__border-4_mobile"></div>
+      </div>
+      <div class="item_3_3" onmouseover="item_over(['item-3-3__border-1_mobile', 'item-3-3__info-1_mobile', 'item-3-3__info-2_mobile', 'item-3-3__border-2_mobile'])" onmouseout="item_out(['item-3-3__border-1_mobile', 'item-3-3__info-1_mobile', 'item-3-3__info-2_mobile', 'item-3-3__border-2_mobile'])" >
+        <img src="./img/mobile/item-3-5.svg" id="item-3-3__info-1_mobile" alt="nRF24L01" class="item-3-3__info-1_mobile mobile">
+        <img src="./img/mobile/item-3-6.svg" id="item-3-3__info-2_mobile" alt="nRF24L01" class="item-3-3__info-2_mobile mobile">
+        <div class="item-3-3__border-1_mobile" id="item-3-3__border-1_mobile"></div>
+        <div class="item-3-3__border-2_mobile" id="item-3-3__border-2_mobile"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

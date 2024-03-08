@@ -1,0 +1,313 @@
+
+.map_mobile > div > div {
+  border: 4px solid #FF6A00;
+  filter: blur(3px);
+  position: absolute;
+  transition: opacity .7s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+.map_mobile > div > img {
+  position: absolute;
+  transition: opacity .7s ease-in-out;
+  transform: rotate(24deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.map_mobile {
+width: 80vw;
+height: 65vw;
+}
+
+/* 1 - 1 */
+.item-1-1 {
+  width: 100%;
+  height: 100%;
+}
+.item-1-1__info-1_mobile {
+  width: 30%;
+  top: -59%;
+  left: 23%;
+}
+.item-1-1__info-2_mobile {
+  width: 55%;
+  top: -30%;
+  left: 35%;
+}
+.item-1-1__border-1_mobile {
+  width: 9%;
+  height: 8%;
+  top: 10%;
+  left: 5.5%;
+}
+.item-1-1__border-2_mobile {
+  width: 21%;
+  height: 10%;
+  top: 0;
+  left: 17%;
+}
+/* 1 - 2 */
+.item_1_2 {
+  width: 100%;
+  height: 100%;
+}
+.item-1-2__info-1_mobile {
+  width: 40%;
+  top: -30%;
+  left: 21%;
+}
+.item-1-2__border-1_mobile {
+  width: 24.5%;
+  height: 22%;
+  top: 1%;
+  left: 40%;
+  opacity: 0;
+}
+.item-1-2__info-2_mobile {
+  width: 55%;
+  top: -24%;
+  left: 58%;
+}
+.item-1-2__border-2_mobile {
+  width: 6.5%;
+  height: 5.5%;
+  top: 24%;
+  left: 45%;
+}
+.item-1-2__border-3_mobile {
+  width: 3%;
+  height: 12%;
+  top: 24.5%;
+  left: 63%;
+}
+/* 1 - 3  */
+.item_1_3 {
+  width: 100%;
+  height: 100%;
+}
+.item-1-3__info-1_mobile {
+  width: 40%;
+  top: 3%;
+  left: 82%;
+}
+.item-1-3__border-1_mobile {
+  width: 22%;
+  height: 13%;
+  top: -3%;
+  left: 66%;
+}
+
+/* 2 Ряд  id = 2@ */
+
+.item_2_1 {
+  width: 100%;
+  height: 100%;
+}
+.item-2-1__info-1_mobile {
+  width: 70%;
+  top: 55%;
+  left: 16%;
+}
+.item-2-1__info-2_mobile {
+  width: 57%;
+  top: 48%;
+  left: -16%;
+}
+.item-2-1__info-3_mobile{
+  width: 36%;
+  top: -10%;
+  left: 9%;
+}
+.item-2-1__border-1_mobile {
+  width: 4%;
+  height: 16%;
+  top: 34%;
+  left: 32%;
+} 
+.item-2-1__border-2_mobile {
+  width: 2.5%;
+  height: 6%;
+  top: 41%;
+  left: 19.8%;
+}
+.item-2-1__border-3_mobile {
+  width: 4%;
+  height: 11%;
+  top: 40%;
+  left: 9%;
+}
+
+.item_2_2 {
+  width: 100%;
+  height: 100%;
+}
+.item-2-2__info-1_mobile {
+  width: 50%;
+  top: 45%;
+  left: -18%;
+}
+.item-2-2__info-2_mobile {
+  width: 43%;
+  top: 63%;
+  left: 41%;
+}
+.item-2-2__info-3_mobile {
+  width: 40%;
+  top: -3%;
+  left: 10.5%;
+}
+.item-2-2__border-3_mobile {
+  width: 3%;
+  height: 14%;
+  top: 37.5%;
+  left: 38.5%;
+}
+.item-2-2__border-1_mobile {
+  width: 11%;
+  height: 14%;
+  top: 49%;
+  left: 52%;
+}
+.item-2-2__border-2_mobile {
+  width: 6%;
+  height: 8%;
+  top: 55%;
+  left: 38%;
+}
+
+
+
+.item_2_3 {
+  width: 100%;
+  height: 100%;
+}
+.item-2-3__info-1_mobile {
+  width: 50%;
+  top: 0%;
+  left: 51%;
+}
+.item-2-3__border-1_mobile {
+  width: 4.5%;
+  height: 16%;
+  top: 32%;
+  left: 74%;
+}
+.item-2-3__border-2_mobile {
+  width: 11%;
+  height: 49%;
+  top: 24%;
+  left: 88%;
+}
+/* 3 - 1 */
+.item_3_1 {
+  width: 100%;
+  height: 100%;
+}
+.item-3-1__info-1_mobile {
+  width: 40%;
+  top: 101%;
+  left: 22%;
+}
+.item-3-1__border-1_mobile {
+  width: 8%;
+  height: 8%;
+  top: 78%;
+  left: 8%;
+}
+.item-3-1__info-2_mobile {
+  width: 73%;
+  top: 91%;
+  left: 7%;
+}
+.item-3-1__border-2_mobile {
+  width: 8%;
+  height: 11%;
+  top: 87%;
+  left: 45%;
+  border-radius: 50%;
+}
+.item-3-1__border-3_mobile {
+  width: 21%;
+  height: 10%;
+  top: 87%;
+  left: 16%;
+}
+
+.item_3_2 {
+  width: 100%;
+  height: 100%;
+}
+.item-3-2__info-1_mobile {
+  width: 40%;
+  top: 88%;
+  left: 49%;
+}
+.item-3-2__info-2_mobile {
+  width: 38%;
+  top: 95%;
+  left: 38%;
+}
+.item-3-2__border-1_mobile {
+  width: 7%;
+  height: 17%;
+  left: 38%;
+  top: 80%;
+}
+.item-3-2__border-2_mobile {
+  width: 7%;
+  height: 16%;
+  top: 81%;
+  left: 59%;
+}
+.item-3-2__border-3_mobile {
+  width: 12%;
+  height: 5%;
+  top: 78%;
+  left: 46%;
+}
+.item-3-2__border-4_mobile {
+  width: 5%;
+  height: 12%;
+  top: 86%;
+  left: 54%;
+}
+
+.item_3_3 {
+  width: 100%;
+  height: 100%;
+}
+.item-3-3__info-1_mobile {
+  width: 70%;
+  top: -19%;
+  left: 44%;
+}
+.item-3-3__info-2_mobile {
+  width: 24%;
+  top: 86%;
+  left: 51%;
+}
+.item-3-3__border-1_mobile {
+  width: 7%;
+  height: 8%;
+  top: 76%;
+  left: 89%;
+}
+.item-3-3__border-2_mobile {
+  width: 22%;
+  height: 11%;
+  top: 87%;
+  left: 66%;
+}
+
+@media screen and (max-width: 700px) {
+  .mouse {
+    width: 20%;
+  }
+  .rudiron {
+    width: 70vw;
+  }
+  .sun {
+   /*  height: 120vw; */
+  }
+}
