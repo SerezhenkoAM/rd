@@ -1,3 +1,6 @@
+
+moveParticles()
+
 function item_over(elementIds) {
   elementIds.forEach((id) => {
     let element = document.getElementById(id);
@@ -58,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var elem_2 = document.getElementById('map');
       if (screenWidth >= 700) {
           elem.style.display = 'none';
-          elem_2.style.display = 'block';
+          elem_2.style.display = 'grid';
       } else {
           elem.style.display = 'grid';
           elem_2.style.display = 'none';
@@ -74,35 +77,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 function moveParticles() {
-  const wrapper = document.getElementById('wrapp'); // Находим контейнер-ограничитель по классу
-  const wrapperRect = wrapper.getBoundingClientRect(); // Получаем размеры и позицию контейнера-ограничителя
+  const wrapper = document.getElementById('wrapp'); 
+  const wrapperRect = wrapper.getBoundingClientRect(); 
 
-  const container = document.getElementById('particles__wrapp'); // Находим контейнер частиц по id
+  const container = document.getElementById('particles__wrapp'); 
   const particles = container.children;
 
   for (const particle of particles) {
-    const maxX = wrapperRect.width - particle.offsetWidth; // Ограничиваем максимальное значение по оси X
-    const maxY = wrapperRect.height - particle.offsetHeight; // Ограничиваем максимальное значение по оси Y
-    const newX = Math.max(0, Math.min(Math.floor(Math.random() * maxX), maxX)); // Ограничиваем координаты, чтобы частицы не выходили за пределы контейнера
+    const maxX = wrapperRect.width - particle.offsetWidth; 
+    const maxY = wrapperRect.height - particle.offsetHeight; 
+    const newX = Math.max(0, Math.min(Math.floor(Math.random() * maxX), maxX)); 
     const newY = Math.max(0, Math.min(Math.floor(Math.random() * maxY), maxY));
     particle.style.transform = `translate(${newX}px, ${newY}px)`;
   }
 }
 
-moveParticles()
-
 setInterval(moveParticles, 20000); 
 
 const cursor = document.getElementById('light__circle');
 const map = document.getElementById('body');
-
 map.addEventListener('mousemove', e => {
-  const rect = map.getBoundingClientRect(); // Получаем размеры и позицию блока wrapp относительно viewport
-  const xRelativeToMap = e.clientX - rect.left; // Рассчитываем положение курсора по горизонтали относительно блока wrapp
-  const yRelativeToMap = e.clientY - rect.top; // Рассчитываем положение курсора по вертикали относительно блока wrapp
-  const offsetX = xRelativeToMap; // Рассчитываем смещение курсора относительно центра блока wrapp по горизонтали
-  const offsetY = yRelativeToMap; // Рассчитываем смещение курсора относительно центра блока wrapp по вертикали
-  console.log(rect);
-  cursor.style.background = `radial-gradient(circle at ${offsetX}px ${offsetY}px, transparent 20%, #00000080 15%)`;
+  cursor.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, transparent 9%, #00000080 15%)`;
 });
 
